@@ -12,7 +12,7 @@ def upload_file():
         return 'No selected file'
 
     if file:
-        file.save('uploads/' + file.filename)  # Save the file to the uploads folder
+        file.save('upload/' + file.filename)  # Save the file to the uploads folder
         return 'File uploaded successfully'
 if __name__ == "__main__":
     app.run(debug=True)
